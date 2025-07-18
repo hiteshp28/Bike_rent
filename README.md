@@ -1,4 +1,4 @@
-# 🛵 2Wheleeee – Peer-to-Peer Bike Rental Marketplace
+# 🛵 Moto-Host – Peer-to-Peer Bike Rental Marketplace
 
 A full-stack bike rental platform where users can book bikes listed by hosts, complete with secure payments, document verification, and real-time communication.
 
@@ -104,7 +104,4 @@ npm start
 
 ---
 
-✅ You’re all set! Visit `http://localhost:3000` to explore 2Wheleeee 🎉
-
-```
-```
+✅ You’re all set! Visit `http://localhost:3000` to explore Moto-Host 🎉
