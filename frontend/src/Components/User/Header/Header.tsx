@@ -89,7 +89,7 @@ const Header = () => {
               className="text-2xl font-bold bg-gradient-to-r from-sky-500 to-blue-600 bg-clip-text text-transparent cursor-pointer"
               onClick={() => navigate('/')}
             >
-              2Wheleeee
+              Moto-Host
             </div>
           </div>
 

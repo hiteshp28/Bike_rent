@@ -342,7 +342,7 @@ const BikeSingleComp = () => {
                     key: import.meta.env.VITE_RAZORPAY_KEY_ID,
                     amount: res.data.amount,
                     currency: res.data.currency,
-                    name: "2Wheeleeee",
+                    name: "Moto-Host",
                     description: "Order Transaction",
                     order_id: res.data.order_id,
                     handler: (response) => {

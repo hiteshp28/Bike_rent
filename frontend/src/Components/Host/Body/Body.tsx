@@ -34,7 +34,7 @@ function Body() {
                 Turn Your Bike Into <span className="text-sky-600">Passive Income</span>
               </h1>
               <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-                2Wheeleeee makes it easy for you to earn extra income by renting out your bike to trusted drivers. Simply list your asset, set your availability, and watch as your vehicle works for you.
+                Moto-Host makes it easy for you to earn extra income by renting out your bike to trusted drivers. Simply list your asset, set your availability, and watch as your vehicle works for you.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 sm:items-center">
@@ -77,7 +77,7 @@ function Body() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
-              Why Host With 2Wheeleeee?
+              Why Host With Moto-Host?
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-500">
               Our platform offers everything you need to rent your bike with confidence
@@ -91,7 +91,7 @@ function Body() {
                 <div className="bg-sky-50 p-6 rounded-xl border border-sky-100 shadow-sm">
                   <h3 className="text-2xl font-bold text-gray-900">Flexible Scheduling</h3>
                   <p className="mt-4 text-gray-600 leading-relaxed">
-                    2Wheeleeee empowers you with complete control over your vehicle's availability through a flexible
+                    Moto-Host empowers you with complete control over your vehicle's availability through a flexible
                     scheduling system. Specify the days and times your bike is available for rent.
                   </p>
                   <ul className="mt-6 space-y-2">
@@ -138,7 +138,7 @@ function Body() {
                 <div className="bg-sky-50 p-6 rounded-xl border border-sky-100 shadow-sm">
                   <h3 className="text-2xl font-bold text-gray-900">Comprehensive Security Deposit</h3>
                   <p className="mt-4 text-gray-600 leading-relaxed">
-                    2Wheeleeee provides comprehensive security deposit for your vehicle during rental periods, ensuring
+                    Moto-Host provides comprehensive security deposit for your vehicle during rental periods, ensuring
                     peace of mind for both hosts and renters.
                   </p>
                   <ul className="mt-6 space-y-2">

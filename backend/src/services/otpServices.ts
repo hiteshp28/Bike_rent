@@ -33,7 +33,7 @@ class OtpServices implements IOtpService{
                 from: process.env.TRANSPORTER_EMAIL,
                 to: email,
                 subject: 'OTP Verification',
-                text: `Welcome to 2wheleeee. Your OTP for registration is: ${otp}`
+                text: `Welcome to Moto-Host. Your OTP for registration is: ${otp}`
             }            
 
             // const a =   await transporter.sendMail(mailOptions)

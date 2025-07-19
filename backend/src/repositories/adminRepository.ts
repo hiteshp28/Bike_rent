@@ -222,7 +222,7 @@ class AdminRepository implements IAdminRepository {
                     from: process.env.TRANSPORTER_EMAIL,
                     to: user?.email,
                     subject: 'Approved Mail',
-                    text: `Welcome to 2wheleeee. Your Host Service is approved`
+                    text: `Welcome to Moto-Host. Your Host Service is approved`
                 }
 
                 await transporter.sendMail(mailOptions)
@@ -251,7 +251,7 @@ class AdminRepository implements IAdminRepository {
                     from: process.env.TRANSPORTER_EMAIL,
                     to: user?.email,
                     subject: 'Revoke Mail',
-                    text: `Welcome to 2wheleeee. Your Host Service is Rejected \n Reason : ${reason}`
+                    text: `Welcome to 2. Your Host Service is Rejected \n Reason : ${reason}`
                 }
                 await transporter.sendMail(mailOptions)
                 console.log("mailllllllllllllllll aayxhuuuuuuuuuuuuuuuuuutooooooooooooooooooooooooooo")

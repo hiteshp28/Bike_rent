@@ -34,7 +34,7 @@ export const generateAndSendOTP = async (toEmail: string): Promise<string> => {
         from: process.env.TRANSPORTER_EMAIL,
         to: toEmail,
         subject: 'OTP Verification',
-        text: `Welcome to 2wheleeee. Your OTP for registration is: ${otp}`
+        text: `Welcome to Moto-Host. Your OTP for registration is: ${otp}`
     }
 
     await transporter.sendMail(mailOptions)
