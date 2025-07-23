@@ -44,14 +44,14 @@ export class AdminController {
                     sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                     secure: process.env.NODE_ENV === 'production' ? true : false,
                     httpOnly: true,
-                    domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                    domain: undefined
                 })
                 .cookie('admin_refresh_token', refreshToken, {
                     maxAge: 7 * 24 * 60 * 60 * 1000,
                     sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                     secure: process.env.NODE_ENV === 'production' ? true : false,
                     httpOnly: true,
-                    domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                    domain:undefined
                 })
                 .json(ResponseModel.success('Login successful', {
                     adminEmail: adminEmail,
@@ -71,14 +71,14 @@ export class AdminController {
                 sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                 secure: process.env.NODE_ENV === 'production' ? true : false,
                 httpOnly: true,
-                domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                domain: undefined
             });
 
             res.clearCookie('admin_refresh_token', {
                 sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                 secure: process.env.NODE_ENV === 'production' ? true : false,
                 httpOnly: true,
-                domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                domain:undefined
             });
 
             return res.status(OK).json({ success: true, message: 'Logged out successfully' });
