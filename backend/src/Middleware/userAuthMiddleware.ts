@@ -43,7 +43,7 @@ const userAuth = async (req: Request, res: Response, next: NextFunction): Promis
                 sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                 secure: process.env.NODE_ENV === 'production' ? true : false,
                 httpOnly: true,
-                domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                domain: undefined
             });
             token = newAccessToken;
         } catch (error) {
@@ -86,7 +86,7 @@ const userAuth = async (req: Request, res: Response, next: NextFunction): Promis
                 sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                 secure: process.env.NODE_ENV === 'production' ? true : false,
                 httpOnly: true,
-                domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                domain: undefined
             });
             token = newAccessToken;
             // return res.status(UNAUTHORIZED).json(ResponseModel.error(decoded?.message))

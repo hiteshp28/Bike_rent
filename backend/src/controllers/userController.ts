@@ -81,14 +81,14 @@ export class UserController {
                     sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                     secure: process.env.NODE_ENV === 'production' ? true : false,
                     httpOnly: true,
-                    domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                    domain:undefined
                 })
                 .cookie('user_refresh_token', userRefreshToken, {
                     maxAge: 7 * 24 * 60 * 60 * 1000,
                     sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                     secure: process.env.NODE_ENV === 'production' ? true : false,
                     httpOnly: true,
-                    domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                    domain: undefined
                 })
                 .json(ResponseModel.success('Login successfull', {
                     user: {
@@ -113,13 +113,13 @@ export class UserController {
                     httpOnly: true, // cookie can't be accessed via JavaScript (prevents XSS attacks).
                     secure: process.env.NODE_ENV === 'production',   // cookie is sent only over HTTPS (ensure your environment supports HTTPS).
                     sameSite: 'none',  // prevents cross-site requests (adds CSRF protection)
-                    domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined,
+                    domain:undefined,
                 })
                 .clearCookie('user_refresh_token', {
                     httpOnly: true,
                     secure: process.env.NODE_ENV === 'production',
                     sameSite: 'none',
-                    domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined,
+                    domain: undefined,
                 })
                 .status(OK)
                 .json(ResponseModel.success('Logged out successfully'))

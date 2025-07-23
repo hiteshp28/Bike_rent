@@ -25,7 +25,7 @@ export const adminAuthMiddleware = async (req: Request, res: Response, next: Nex
                 maxAge: 7 * 24 * 60 * 60 * 1000,
                 sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                 secure: process.env.NODE_ENV === 'production' ? true : false,
-                domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                domain: undefined
             });
 
             token = newAccessToken;
@@ -49,7 +49,7 @@ export const adminAuthMiddleware = async (req: Request, res: Response, next: Nex
                 maxAge: 7 * 24 * 60 * 60 * 1000,
                 sameSite: process.env.NODE_ENV === 'production' ? 'none' : 'lax',
                 secure: process.env.NODE_ENV === 'production' ? true : false,
-                domain: process.env.NODE_ENV === 'production' ? '.2wheleeee.store' : undefined
+                domain:  undefined
             });
 
             token = newAccessToken;
